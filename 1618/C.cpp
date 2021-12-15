@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
+#define forloop(i, a, b) for (int i = a; i < b; ++i)
 
 int main()
 {
@@ -45,7 +46,8 @@ int main()
             }
             if (finput != 1)
             {
-                for (int i{0}; i < second.size(); ++i)
+                int i;
+                forloop(i, 0, second.size())
                 {
                     if (__gcd(finput, second[i]) == finput)
                     {
